@@ -1,0 +1,5 @@
+N = int(input())
+arr = list(set([input() for _ in range(N)]))
+arr.sort()
+arr.sort(key = lambda x: len(x))
+for i in arr: print(i)
